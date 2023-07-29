@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+  background-color: gainsboro;
+  margin: 0;
+  background-image: url(images/background.jpg);
+  background-size: contain;
+  height:auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.home{
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+.paper {
+  font-family: "Patrick Hand", cursive;
+  position: relative;
+  line-height: 25px;
+  padding-bottom: 55px;
+  box-sizing: content-box;
+  width: 50%;
+  min-height: 700px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, margin 0.3s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 0, 0, 0.3);
+    margin-left: 48px;
+    z-index: 2;
+  }
+
+  .lines {
+    top: 50px;
+    position: relative;
+    box-sizing: content-box;
+    min-height: calc(650px);
+    padding-right: 8px;
+    padding-left: 56px;
+    background-image: repeating-linear-gradient(white 0px, white 23.5px, steelblue 25px);
+
+    ul {
+      margin: 0;
+    }
+  }
+
+  .holes {
+    position: absolute;
+    height: 100%;
+    width: 48px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    top: 0;
+    left: 0;
+
+    .hole {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: gainsboro;
+      left: 12.5px;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+
+      &:nth-child(1) {
+        top: 50px;
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+      }
+
+      &:nth-child(3) {
+        top: 90%;
+      }
+    }
+  }
+}
+
+[contenteditable] {
+  border: 0;
+  outline: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .paper {
+    width: 80%;
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .paper {
+    width: 90%;
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .paper {
+    width: 95%;
+    transform: scale(0.8);
+  }
+}
+.create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 50px;
+  }
+  
+  .head{
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+    margin-top: 20px;
+  margin-bottom: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    color:black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+      
+  }
+  .create-form {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .create-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:black;
+  }
+  
+  .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .label {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+  }
+  
+  .task-input,
+  .description-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for input fields */
+  }
+  
+  .date-picker {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for date picker */
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus,
+  .input-group .react-datepicker-wrapper:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+  }
+  
+  .input-group input:not(:placeholder-shown) ~ .label,
+  .input-group textarea:not(:placeholder-shown) ~ .label,
+  .input-group .react-datepicker-wrapper:not(:placeholder-shown) ~ .label {
+    top: -10px;
+    font-size: 12px;
+    color:black;
+  }
+  
+  .add-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+.navbar {
+    background-color: #333;
+	opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo {
+    padding: 5px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+    }
+  
+    .nav-links a {
+      padding: 15px;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .show-menu {
+      display: flex;
+    }
+  
+    .burger.open .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .burger.open .line2 {
+      opacity: 0;
+    }
+  
+    .burger.open .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+/* styles.css (or your preferred CSS file) */
+
+/* General button style */
+button {
+	background-color: #007bff; /* Blue color, you can change this to any color you prefer */
+	color: #fff; /* White text color */
+	padding: 5px;
+	border: none; /* Remove default button border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Show pointer cursor on hover */
+	font-size: 13px; /* Adjust font size */
+  }
+  
+  /* Add hover effect */
+  button:hover {
+	background-color: #0056b3; /* Darker blue on hover, you can adjust this color */
+  }
+  
+  /* Add focus effect (when button is clicked or focused) */
+  button:focus {
+	outline: none; /* Remove focus outline */
+	box-shadow: 0 0 3px #007bff; /* Add shadow on focus */
+  }
+  
+  /* Add disabled effect */
+  button:disabled {
+	background-color: #ccc; /* Gray color when the button is disabled */
+	cursor: not-allowed; /* Show "not-allowed" cursor when disabled */
+  }
+  
