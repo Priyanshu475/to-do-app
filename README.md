@@ -1,7 +1,6 @@
 # to-do-app
 
 ## Tech stack: Node.js, React.js, Express, MongoDB
-## Live at https://to-do-app-peach-tau.vercel.app/
 
 ## Installation:
 ### run npm i for client and root dir
