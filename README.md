@@ -9,16 +9,16 @@
 ### at client write npm start
 
 ## List of all to-dos
-![ss1](https://github.com/Priyanshu475/to-do-app/assets/96469123/b26727e9-460e-4fc7-afa1-8a844c749640)
+![ss1](https://github.com/Priyanshu475/to-do-app/assets/96469123/cd1a65e8-0985-47bb-8070-58bac7ac395f)
 
 
 ## Editing todo
-![ss2](https://github.com/Priyanshu475/to-do-app/assets/96469123/56a0ffb8-de38-4310-b522-2d2c178b35b3)
+![ss2](https://github.com/Priyanshu475/to-do-app/assets/96469123/67054ebb-d2e6-431d-bffe-5adc8cfd9fb8)
 
 
 ## Create new todo
-![ss3](https://github.com/Priyanshu475/to-do-app/assets/96469123/fa500c95-ca4a-41e7-8a01-6b7bf385ce32)
+![ss3](https://github.com/Priyanshu475/to-do-app/assets/96469123/0a5815d9-e233-43c8-97e5-7c18afb38929)
 
 
 ## Mobile View
-![ss4](https://github.com/Priyanshu475/to-do-app/assets/96469123/7b1a412a-04cd-4633-b81f-5f367e2fd975)
+![ss4](https://github.com/Priyanshu475/to-do-app/assets/96469123/53489032-40a7-4977-9095-0059a942f3a5)
