@@ -1,7 +1,6 @@
 # to-do-app
 
 ## Tech stack: Node.js, React.js, Express, MongoDB
-## Live at https://to-do-app-sigma-roan.vercel.app/
 
 
 ## Installation:
