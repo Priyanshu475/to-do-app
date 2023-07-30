@@ -4,8 +4,8 @@
 
 
 ## Installation:
-### run npm i for client and backend
-### at backend write node app
+### run npm i for client and root dir
+### at root dir write node app
 ### at client write npm start
 
 ## List of all to-dos
