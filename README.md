@@ -5,8 +5,8 @@
 
 ## Installation:
 ### run npm i for client and root dir
-### at root dir write node app
-### at client write npm start
+### first at root dir write node app  
+### then at client write npm start 
 
 ## List of all to-dos
 ![ss1](https://github.com/Priyanshu475/to-do-app/assets/96469123/cd1a65e8-0985-47bb-8070-58bac7ac395f)
